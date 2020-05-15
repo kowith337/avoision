@@ -87,6 +87,7 @@ const TRACKERS_BY_ROOT = {
         'w'
     ],
     'gs_': [
+        'lcp',
         'l',
         'r'
     ],
@@ -172,6 +173,8 @@ const TRACKERS_BY_ROOT = {
         'aqs',
         'ei',
         'sa',
+        'sclient',
+        'uact',
         'ved',
         'vet',
         // - past search shouldn't bind into addrss bar!
