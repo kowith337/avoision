@@ -30,6 +30,41 @@ const TRACKERS_BY_ROOT = {
         'swu'
     ],
 
+    // Facebook Multi
+    'entry': [
+        'point',
+        '_point',
+        '_product'
+    ],
+    'fb_': [
+        'dtsg_ag'
+    ],
+    'hc_': [
+        'location',
+        'ref'
+    ],
+    'loc_': [
+        'ref'
+    ],
+    'page_': [
+        'source'
+    ],
+    'pn_': [
+        'location',
+        'ref'
+    ],
+    'ref': [
+        'id',
+        'src'
+    ],
+    'sw_': [
+        'fnr_id'
+    ],
+    '__m_': [
+        'async_page__',
+        'log_async__'
+    ],
+
     //no clue - don't care - don't trust 'em
     'rc_': [
         'fifo',
@@ -46,6 +81,15 @@ const TRACKERS_BY_ROOT = {
         'id'
     ],
 
+    // Google
+    'bi': [ //display size tracking!?
+        'h',
+        'w'
+    ],
+    'gs_': [
+        'l',
+        'r'
+    ],
     // Hubspot
     '_hs': [
         'enc',
@@ -86,6 +130,8 @@ const TRACKERS_BY_ROOT = {
     ],
     // Non-prefixy and 1-offs
     '': [
+        // Twitter binding "AMP" for any outgoing URLs to make sure that you will get AMP page, rather than original site!
+        'amp',
         // Facebook Click Identifier
         // http://thisinterestsme.com/facebook-fbclid-parameter/
         'fbclid',
@@ -97,17 +143,64 @@ const TRACKERS_BY_ROOT = {
         'ncid',
         // Unknown
         'nr_email_referer',
+        // Google Play affiliate links
+        'pcampaignid',
+        // Steam - both store and community
+        'snr',
         // Generic-ish. Facebook, Product Hunt and others
         'ref',
         // Alibaba-family 'super position model' tracker:
         // https://github.com/newhouse/url-tracking-stripper/issues/38
+        'go_item_id'
+        'go_itemid'
+        'main_item_id'
+        'main_itemid'
+        'pvid',
+        'scm',
+        'sm',
+        'sourceType',
         'spm',
+        'ttid',
+        'ut_sk',
+        'utparam',
+        // YouTube
+        // - bind in when you click from short URLs
+        'feature',
+        // - bind when you click external links, mostly from descriptions or comments
+        'redir_token',
+        // Google Search FUCK
+        'aqs',
+        'ei',
+        'sa',
+        'ved',
+        'vet',
+        // - past search shouldn't bind into addrss bar!
+        'oq',
         // amazon garbage
         'camp',
         'linkId',
         'creative',
         'linkCode',
         'tag',
+        // Facebook More - may affect to non-Facebook too
+        '__ccr',
+        '__rv__',
+        '__so__',
+        '__tn__',
+        '__xts__\[0\]',
+        '_ft_',
+        '_rdc',
+        'acontext',
+        'aref',
+        'bacr',
+        'dti',
+        'eid',
+        'fref',
+        'lst',
+        'referrer',
+        'session_id',
+        'settings_tracking',
+        'source',
         // random stuff - appears not to break when cleaned during tests
         'sl',
         'tpl',
