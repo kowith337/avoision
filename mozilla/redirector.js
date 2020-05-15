@@ -151,10 +151,10 @@ const TRACKERS_BY_ROOT = {
         'ref',
         // Alibaba-family 'super position model' tracker:
         // https://github.com/newhouse/url-tracking-stripper/issues/38
-        'go_item_id'
-        'go_itemid'
-        'main_item_id'
-        'main_itemid'
+        'go_item_id',
+        'go_itemid',
+        'main_item_id',
+        'main_itemid',
         'pvid',
         'scm',
         'sm',
