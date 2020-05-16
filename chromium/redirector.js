@@ -75,7 +75,7 @@ const TRACKERS_BY_ROOT = {
         'rv__',
         'so__',
         'tn__',
-        'xts__\[0\]',
+        'xts__\[0\]'
     ],
     '__m_': [
         'async_page__',
@@ -101,12 +101,12 @@ const TRACKERS_BY_ROOT = {
     // Alibaba Multi
     'go_': [
         'itemid',
-        'item_id',
+        'item_id'
     ],
 
     'main_': [
         'itemid',
-        'item_id',
+        'item_id'
     ],
 
     // Google
