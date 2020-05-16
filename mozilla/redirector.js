@@ -36,8 +36,9 @@ const TRACKERS_BY_ROOT = {
         '_point',
         '_product'
     ],
-    'fb_': [
-        'dtsg_ag'
+    'fb_dtsg_': [
+        'ac',
+        'ag'
     ],
     'hc_': [
         'location',
@@ -46,6 +47,9 @@ const TRACKERS_BY_ROOT = {
     'loc_': [
         'ref'
     ],
+    'orig_': [
+        'source'
+    ],
     'page_': [
         'source'
     ],
@@ -53,12 +57,25 @@ const TRACKERS_BY_ROOT = {
         'location',
         'ref'
     ],
+    'privacy_': [
+        'source'
+    ],
     'ref': [
+        '_component',
+        '_page',
+        '_source',
         'id',
         'src'
     ],
     'sw_': [
         'fnr_id'
+    ],
+    '__': [
+        'ccr',
+        'rv__',
+        'so__',
+        'tn__',
+        'xts__\[0\]',
     ],
     '__m_': [
         'async_page__',
@@ -79,6 +96,17 @@ const TRACKERS_BY_ROOT = {
     // Adobe Omniture SiteCatalyst
     'ic': [
         'id'
+    ],
+
+    // Alibaba Multi
+    'go_': [
+        'itemid',
+        'item_id',
+    ],
+
+    'main_': [
+        'itemid',
+        'item_id',
     ],
 
     // Google
@@ -131,7 +159,7 @@ const TRACKERS_BY_ROOT = {
     ],
     // Non-prefixy and 1-offs
     '': [
-        // Twitter binding "AMP" for any outgoing URLs to make sure that you will get AMP page, rather than original site!
+        // Twitter binding "AMP" param for any outgoing URLs to make sure that you will get AMP page, rather than original site!
         'amp',
         // Facebook Click Identifier
         // http://thisinterestsme.com/facebook-fbclid-parameter/
@@ -152,10 +180,6 @@ const TRACKERS_BY_ROOT = {
         'ref',
         // Alibaba-family 'super position model' tracker:
         // https://github.com/newhouse/url-tracking-stripper/issues/38
-        'go_item_id',
-        'go_itemid',
-        'main_item_id',
-        'main_itemid',
         'pvid',
         'scm',
         'sm',
@@ -165,10 +189,8 @@ const TRACKERS_BY_ROOT = {
         'ut_sk',
         'utparam',
         // YouTube
-        // - bind in when you click from short URLs
-        'feature',
-        // - bind when you click external links, mostly from descriptions or comments
-        'redir_token',
+        'feature', // bind in when you click from short URLs
+        'redir_token', // bind when you click external links, mostly from descriptions or comments
         // Google Search FUCK
         'aqs',
         'ei',
@@ -177,8 +199,7 @@ const TRACKERS_BY_ROOT = {
         'uact',
         'ved',
         'vet',
-        // - past search shouldn't bind into addrss bar!
-        'oq',
+        'oq', // past search shouldn't bind into addrss bar!
         // amazon garbage
         'camp',
         'linkId',
@@ -186,18 +207,15 @@ const TRACKERS_BY_ROOT = {
         'linkCode',
         'tag',
         // Facebook More - may affect to non-Facebook too
-        '__ccr',
-        '__rv__',
-        '__so__',
-        '__tn__',
-        '__xts__\[0\]',
         '_ft_',
         '_rdc',
+        '_rdr',
         'acontext',
         'aref',
         'bacr',
         'dti',
         'eid',
+        'fb_dtsg',
         'fref',
         'lst',
         'referrer',
