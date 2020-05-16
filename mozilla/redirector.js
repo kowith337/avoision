@@ -30,6 +30,12 @@ const TRACKERS_BY_ROOT = {
         'swu'
     ],
 
+    // Strip params in AMP pages, not neccessary overall! (AMP itself is still tracking us, no extra params!!)
+    'amp_': [
+        'gsa',
+        'js_v'
+    ],
+
     // Facebook Multi
     'entry': [
         'point',
@@ -111,8 +117,8 @@ const TRACKERS_BY_ROOT = {
 
     // Google
     'bi': [ //display size tracking!?
-        'h',
-        'w'
+        'h', //height
+        'w' //width
     ],
     'gs_': [
         'lcp',
