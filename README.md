@@ -48,6 +48,10 @@ _It's unlikely I'll ever submit this to google or mozilla; I don't trust them._
 4. Select _Install Add-on from file..._
 5. Open the ZIP file and watch as Firefox refuses to install it - I prefer [Waterfox](https://www.waterfoxproject.org/) anyway
 
+Or else...
+> - Redo step 1~2, then go to `about:debugging` and load zip file as temporary addons.
+> - However, you need to do that everytime when you've launch or restart browser.
+
 (I hear that it might work in greasemonkey on Firefox, but haven't tried it myself)
 
 ## faq
