@@ -223,11 +223,13 @@ const TRACKERS_BY_ROOT = {
         'eid',
         'fb_dtsg',
         'fref',
+        'impression_id',
         'lst',
         'referrer',
         'session_id',
         'settings_tracking',
         'source',
+        'upsell_id',
         // random stuff - appears not to break when cleaned during tests
         'sl',
         'tpl',
