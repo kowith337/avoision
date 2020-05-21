@@ -30,7 +30,7 @@ const TRACKERS_BY_ROOT = {
         'swu'
     ],
 
-    // Strip params in AMP pages, not neccessary overall! (AMP itself is still tracking us, no extra params!!)
+    // Strip params in AMP pages, not neccessary overall! (AMP itself is still tracking us, so no extra params!!)
     'amp_': [
         'gsa',
         'js_v'
@@ -109,7 +109,6 @@ const TRACKERS_BY_ROOT = {
         'itemid',
         'item_id'
     ],
-
     'main_': [
         'itemid',
         'item_id'
@@ -236,7 +235,9 @@ const TRACKERS_BY_ROOT = {
         'mp',
         'trkid',
         'unlock',
-        'mkt_tok'
+        'mkt_tok',
+        // Unknown
+        'sqp'
     ]
 };
 const MISC_FOR_CLEANING = [
