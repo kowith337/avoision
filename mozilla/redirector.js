@@ -199,9 +199,11 @@ const TRACKERS_BY_ROOT = {
         // Google Search FUCK
         'aqs',
         'ei',
+        'esrc',
         'sa',
         'sclient',
         'uact',
+        'usg',
         'ved',
         'vet',
         'oq', // past search shouldn't bind into addrss bar!
