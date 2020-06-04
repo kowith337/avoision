@@ -206,7 +206,7 @@ const TRACKERS_BY_ROOT = {
         'sclient',
         'uact',
         'usg',
-        'ust', // same as 'ei', but this expose unencrypted format!
+        'ust', // same as 'ei', but this expose plain numbers!
         'ved',
         'vet',
         'oq', // past search shouldn't bind into addrss bar!
@@ -232,6 +232,7 @@ const TRACKERS_BY_ROOT = {
         'referrer',
         'session_id',
         'settings_tracking',
+        'sfnsn', // External share outside Facebook
         'source',
         'upsell_id',
         // Unknown
