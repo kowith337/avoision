@@ -46,6 +46,10 @@ const TRACKERS_BY_ROOT = {
         'ac',
         'ag'
     ],
+    'ft': [
+        '_ent_identifier',
+        'entidentifier'
+    ],
     'hc_': [
         'location',
         'ref'
@@ -115,10 +119,6 @@ const TRACKERS_BY_ROOT = {
     ],
 
     // Google
-    'bi': [ //display size tracking!?
-        'h', //height
-        'w' //width
-    ],
     'gs_': [
         'lcp',
         'l',
@@ -194,16 +194,19 @@ const TRACKERS_BY_ROOT = {
         'ut_sk',
         'utparam',
         // YouTube
-        'feature', // bind in when you click from short URLs
-        'redir_token', // bind when you click external links, mostly from descriptions or comments
-        // Google Search FUCK
+        'feature', // Short URLs
+        'redir_token', // External links redirect token!?
+        // Google Search FUCKOFF!
         'aqs',
-        'ei',
+        'bih', // Display size tracking?
+        'biw', // Wanna determine our WxH screen!?
+        'ei', // Track even timestamp of when you make a search (use search box on its web)
         'esrc',
         'sa',
         'sclient',
         'uact',
         'usg',
+        'ust', // same as 'ei', but this expose unencrypted format!
         'ved',
         'vet',
         'oq', // past search shouldn't bind into addrss bar!
@@ -213,11 +216,11 @@ const TRACKERS_BY_ROOT = {
         'creative',
         'linkCode',
         'tag',
-        // Facebook More - may affect to non-Facebook too
+        // Facebook More - may affect to non-Facebook too!
         '_ft_',
         '_rdc',
         '_rdr',
-        'acontext',
+        'acontext', // having issue for search and filtering events, but seems untrusted cuz of long values!
         'aref',
         'bacr',
         'dti',
@@ -231,15 +234,15 @@ const TRACKERS_BY_ROOT = {
         'settings_tracking',
         'source',
         'upsell_id',
+        // Unknown
+        'sqp',
         // random stuff - appears not to break when cleaned during tests
         'sl',
         'tpl',
         'mp',
         'trkid',
         'unlock',
-        'mkt_tok',
-        // Unknown
-        'sqp'
+        'mkt_tok'
     ]
 };
 const MISC_FOR_CLEANING = [
