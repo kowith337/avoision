@@ -42,9 +42,11 @@ const TRACKERS_BY_ROOT = {
         '_point',
         '_product'
     ],
-    'fb_dtsg_': [
-        'ac',
-        'ag'
+    'fb_': [
+        'dtsg',
+        'dtsg_ac',
+        'dtsg_ag',
+        'ref'
     ],
     'ft': [
         '_ent_identifier',
@@ -221,11 +223,13 @@ const TRACKERS_BY_ROOT = {
         '_rdc',
         '_rdr',
         'acontext', // having issue for search and filtering events, but seems untrusted cuz of long values!
+        'app_id', // It's bind everytime you click touch menu, possibly break other sites.
+        'appid', // Same as above.
         'aref',
         'bacr',
+        'cref',
         'dti',
         'eid',
-        'fb_dtsg',
         'fref',
         'impression_id',
         'lst',
