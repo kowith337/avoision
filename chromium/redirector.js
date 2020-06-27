@@ -182,6 +182,7 @@ const TRACKERS_BY_ROOT = {
         // Google Play affiliate links
         'pcampaignid',
         // Steam - both store and community
+        'curator_clanid', // Curator referrer
         'snr',
         // Generic-ish. Facebook, Product Hunt and others
         'ref',
@@ -208,7 +209,7 @@ const TRACKERS_BY_ROOT = {
         'sclient',
         'uact',
         'usg',
-        'ust', // same as 'ei', but this expose plain numbers!
+        'ust', // same as 'ei', but this expose plain epoch numbers!
         'ved',
         'vet',
         'oq', // past search shouldn't bind into addrss bar!
