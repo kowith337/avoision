@@ -30,10 +30,29 @@ const TRACKERS_BY_ROOT = {
         'swu'
     ],
 
-    // Strip params in AMP pages, not neccessary overall! (AMP itself is still tracking us, so no extra params!!)
+    // Strip params in AMP pages, not neccessary overall! (AMP itself is still tracking us, so no extra params to be sent!!)
     'amp_': [
         'gsa',
         'js_v'
+    ],
+
+    // Probably Google's Urchin copycat!? (https://pantip.com/topic/40043056#comment10)
+    'at_': [
+        'campaign',
+        'content',
+        'custom1',
+        'custom2',
+        'custom3',
+        'custom4',
+        'custom5',
+        'custom6',
+        'custom7',
+        'custom8',
+        'custom9',
+        'medium',
+        'name',
+        'source',
+        'term'
     ],
 
     // Facebook Multi
@@ -126,6 +145,7 @@ const TRACKERS_BY_ROOT = {
         'l',
         'r'
     ],
+
     // Hubspot
     '_hs': [
         'enc',
@@ -184,6 +204,8 @@ const TRACKERS_BY_ROOT = {
         // Steam - both store and community
         'curator_clanid', // Curator referrer
         'snr',
+        // Yahoo (or Yandex), too!? (fbclid/gclid Copycat)
+        'yclid',
         // Generic-ish. Facebook, Product Hunt and others
         'ref',
         // Alibaba-family 'super position model' tracker:
@@ -199,20 +221,22 @@ const TRACKERS_BY_ROOT = {
         // YouTube
         'feature', // Short URLs
         'redir_token', // External links redirect token!?
-        // Google Search FUCKOFF!
+        // Google FUCKOFF!
         'aqs',
-        'bih', // Display size tracking?
-        'biw', // Wanna determine our WxH screen!?
-        'ei', // Track even timestamp of when you make a search (use search box on its web)
+        'bih', // Display size width, are you kidding me? 
+        'biw', // Display size height, alright then, is it really necessary for them to know this?
+        'ei', // Track even timestamp of when you make a search and/or when you navigate to other page, encoded value!
         'esrc',
+        'rlz', // Chrome installer tracking param!
         'sa',
         'sclient',
+        'sxsrf',
         'uact',
         'usg',
         'ust', // same as 'ei', but this expose plain epoch numbers!
         'ved',
         'vet',
-        'oq', // past search shouldn't bind into addrss bar!
+        'oq', // past-searched words, it's no longer necessary to bind in!
         // amazon garbage
         'camp',
         'linkId',
@@ -221,11 +245,10 @@ const TRACKERS_BY_ROOT = {
         'tag',
         // Facebook More - may affect to non-Facebook too!
         '_ft_',
-        '_rdc',
-        '_rdr',
+        // '_rdc', // Redirect counter, commented because this may cause redirect loop!
         'acontext', // having issue for search and filtering events, but seems untrusted cuz of long values!
-        'app_id', // It's bind everytime you click touch menu, possibly break other sites.
-        'appid', // Same as above.
+        // 'app_id', // It's bind everytime you click touch menu, possibly break other sites, even Facebook itself.
+        // 'appid', // Same as above.
         'aref',
         'bacr',
         'cref',
@@ -237,7 +260,7 @@ const TRACKERS_BY_ROOT = {
         'referrer',
         'session_id',
         'settings_tracking',
-        'sfnsn', // External share outside Facebook
+        'sfnsn', // External share outside Facebook!
         'source',
         'upsell_id',
         // Unknown
