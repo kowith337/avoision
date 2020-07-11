@@ -227,6 +227,7 @@ const TRACKERS_BY_ROOT = {
         'biw', // Display size height, alright then, is it really necessary for them to know this?
         'ei', // Track even timestamp of when you make a search and/or when you navigate to other page, encoded value!
         'esrc',
+        'fir',
         'rlz', // Chrome installer tracking param!
         'sa',
         'sclient',
@@ -262,6 +263,7 @@ const TRACKERS_BY_ROOT = {
         'settings_tracking',
         'sfnsn', // External share outside Facebook!
         'source',
+        'sourceid',
         'upsell_id',
         // Unknown
         'sqp',
