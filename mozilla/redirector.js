@@ -103,10 +103,12 @@ const TRACKERS_BY_ROOT = {
     ],
     '__': [
         'ccr',
+        'cf_chl_jschl_tk__', // This not related to Facebook, it's actually CrapFlare DDoS parameter!
+        'cf_chl_captcha_tk__', // Same as above but use hCaptcha (You may need to switch mode to "Off" temporary if these make you stuck!)
         'rv__',
         'so__',
         'tn__',
-        'xts__\[0\]'
+        'xts__[0]'
     ],
     '__m_': [
         'async_page__',
@@ -225,19 +227,19 @@ const TRACKERS_BY_ROOT = {
         'aqs',
         'bih', // Display size width, are you kidding me? 
         'biw', // Display size height, alright then, is it really necessary for them to know this?
-        'ei', // Track even timestamp of when you make a search and/or when you navigate to other page, encoded value!
+        'ei', // Track even timestamp of when you make a search and/or when you navigate to other page, encoded epoch value!
         'esrc',
         'fir',
+        'oq', // past-searched words, it's no longer necessary to binding with!
         'rlz', // Chrome installer tracking param!
         'sa',
         'sclient',
         'sxsrf',
         'uact',
         'usg',
-        'ust', // same as 'ei', but this expose plain epoch numbers!
+        'ust', // same as 'ei', but this expose plain numbers!
         'ved',
         'vet',
-        'oq', // past-searched words, it's no longer necessary to bind in!
         // amazon garbage
         'camp',
         'linkId',
