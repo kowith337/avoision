@@ -231,6 +231,7 @@ const TRACKERS_BY_ROOT = {
         'esrc',
         'fir',
         'oq', // past-searched words, it's no longer necessary to binding with!
+        'psig', // Redirect signature (images)
         'rlz', // Chrome installer tracking param!
         'sa',
         'sclient',
@@ -265,7 +266,7 @@ const TRACKERS_BY_ROOT = {
         'settings_tracking',
         'sfnsn', // External share outside Facebook!
         'source',
-        'sourceid',
+        'sourceid', // Track and bind browser client name (Google also use this!)
         'upsell_id',
         // Unknown
         'sqp',
