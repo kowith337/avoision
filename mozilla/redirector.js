@@ -227,6 +227,7 @@ const TRACKERS_BY_ROOT = {
         'aqs',
         'bih', // Display size width, are you kidding me? 
         'biw', // Display size height, alright then, is it really necessary for them to know this?
+        'cshid',
         'ei', // Track even timestamp of when you make a search and/or when you navigate to other page, encoded epoch value!
         'esrc',
         'fir',
