@@ -105,6 +105,7 @@ const TRACKERS_BY_ROOT = {
         'ccr',
         'cf_chl_jschl_tk__', // This not related to Facebook, it's actually CrapFlare DDoS parameter!
         'cf_chl_captcha_tk__', // Same as above but use hCaptcha (You may need to switch mode to "Off" temporary if these make you stuck!)
+        'cft__[0]',
         'rv__',
         'so__',
         'tn__',
