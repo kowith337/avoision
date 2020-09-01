@@ -91,6 +91,9 @@ const TRACKERS_BY_ROOT = {
     'privacy_': [
         'source'
     ],
+    'redirect_': [
+        'source'
+    ],
     'ref': [
         '_component',
         '_page',
@@ -103,8 +106,6 @@ const TRACKERS_BY_ROOT = {
     ],
     '__': [
         'ccr',
-        'cf_chl_jschl_tk__', // This not related to Facebook, it's actually CrapFlare DDoS parameter!
-        'cf_chl_captcha_tk__', // Same as above but use hCaptcha (You may need to switch mode to "Off" temporary if these make you stuck!)
         'cft__[0]',
         'rv__',
         'so__',
@@ -196,6 +197,8 @@ const TRACKERS_BY_ROOT = {
         'fbclid',
         // Google Click Identifier
         'gclid',
+        // Instagram Share Identifier (appear when click from shortened links that share outside, e.g. Twitter)
+        'igshid',
         // Some other Google Click thing
         'ocid',
         // Unknown
@@ -207,7 +210,7 @@ const TRACKERS_BY_ROOT = {
         // Steam - both store and community
         'curator_clanid', // Curator referrer
         'snr',
-        // Yahoo (or Yandex), too!? (fbclid/gclid Copycat)
+        // Yandex Copycat (fbclid/gclid)
         'yclid',
         // Generic-ish. Facebook, Product Hunt and others
         'ref',
