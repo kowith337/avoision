@@ -68,7 +68,7 @@ const TRACKERS_BY_ROOT = {
         'ref'
     ],
     'ft': [
-        '_ent_identifier',
+        // '_ent_identifier', // Conflict with reactions in Facebook Basic Phone version
         'entidentifier'
     ],
     'hc_': [
