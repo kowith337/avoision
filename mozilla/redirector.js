@@ -30,7 +30,7 @@ const TRACKERS_BY_ROOT = {
         'swu'
     ],
 
-    // Strip params in AMP pages, not neccessary overall! (AMP itself is still tracking us, so no extra params to be sent!!)
+    // Strip params in AMP pages, not neccessary overall! (AMP itself is still tracking us, so no extra params to be show!!)
     'amp_': [
         'gsa',
         'js_v'
@@ -77,6 +77,11 @@ const TRACKERS_BY_ROOT = {
     ],
     'loc_': [
         'ref'
+    ],
+    'messaging_entry': [
+        'point',
+        '_point',
+        '_product'
     ],
     'orig_': [
         'source'
@@ -235,7 +240,7 @@ const TRACKERS_BY_ROOT = {
         'ei', // Track even timestamp of when you make a search and/or when you navigate to other page, encoded epoch value!
         'esrc',
         'fir',
-        'oq', // typed words before suggestions fix, it's no longer necessary to binding this!
+        'oq', // typed letters before suggestions pick, it's no longer necessary to binding this!
         'psig', // Redirect signature (images)
         'rlz', // Chrome installer tracking!
         'sa',
@@ -259,7 +264,7 @@ const TRACKERS_BY_ROOT = {
         // 'app_id', // It's bind everytime you click touch menu, possibly break other sites, even Facebook itself.
         // 'appid', // Same as above.
         'aref',
-        'bacr', // Group feed posts will be stuck in Facebook basic layout and you cannot navigate to older posts.
+        // 'bacr', // Group feed posts will be stuck in Facebook basic layout and you cannot navigate to older posts.
         'cref',
         'dti',
         'eid',
@@ -269,7 +274,7 @@ const TRACKERS_BY_ROOT = {
         'referrer',
         'session_id',
         'settings_tracking',
-        'sfnsn', // External share outside Facebook!
+        'sfnsn', // Append when share any permalink in Facebook externally!
         'source',
         'sourceid', // Track and bind browser client name (Google also use this!)
         'upsell_id',

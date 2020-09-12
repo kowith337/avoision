@@ -78,6 +78,11 @@ const TRACKERS_BY_ROOT = {
     'loc_': [
         'ref'
     ],
+    'messaging_entry': [
+        'point',
+        '_point',
+        '_product'
+    ],
     'orig_': [
         'source'
     ],
