@@ -197,6 +197,8 @@ const TRACKERS_BY_ROOT = {
     '': [
         // Twitter binding "AMP" param for any outgoing URLs to make sure that you will get AMP page, rather than original site!
         'amp',
+        // Bing Crap (MS Edge Chromium)
+        'cvid',
         // Facebook Click Identifier
         // http://thisinterestsme.com/facebook-fbclid-parameter/
         'fbclid',
@@ -268,6 +270,7 @@ const TRACKERS_BY_ROOT = {
         'cref',
         'dti',
         'eid',
+        'extid',
         'fref',
         'impression_id',
         'lst',

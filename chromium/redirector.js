@@ -30,7 +30,7 @@ const TRACKERS_BY_ROOT = {
         'swu'
     ],
 
-    // Strip params in AMP pages, not neccessary overall! (AMP itself is still tracking us, so no extra params to be sent!!)
+    // Strip params in AMP pages, not neccessary overall! (AMP itself is still tracking us, so no extra params to be show!!)
     'amp_': [
         'gsa',
         'js_v'
@@ -197,6 +197,8 @@ const TRACKERS_BY_ROOT = {
     '': [
         // Twitter binding "AMP" param for any outgoing URLs to make sure that you will get AMP page, rather than original site!
         'amp',
+        // Bing Crap (MS Edge Chromium)
+        'cvid',
         // Facebook Click Identifier
         // http://thisinterestsme.com/facebook-fbclid-parameter/
         'fbclid',
@@ -240,7 +242,7 @@ const TRACKERS_BY_ROOT = {
         'ei', // Track even timestamp of when you make a search and/or when you navigate to other page, encoded epoch value!
         'esrc',
         'fir',
-        'oq', // typed words before suggestions fix, it's no longer necessary to binding this!
+        'oq', // typed letters before suggestions pick, it's no longer necessary to binding this!
         'psig', // Redirect signature (images)
         'rlz', // Chrome installer tracking!
         'sa',
@@ -264,17 +266,18 @@ const TRACKERS_BY_ROOT = {
         // 'app_id', // It's bind everytime you click touch menu, possibly break other sites, even Facebook itself.
         // 'appid', // Same as above.
         'aref',
-        'bacr', // Group feed posts will be stuck in Facebook basic layout and you cannot navigate to older posts.
+        // 'bacr', // Group feed posts will be stuck in Facebook basic layout and you cannot navigate to older posts.
         'cref',
         'dti',
         'eid',
+        'extid',
         'fref',
         'impression_id',
         'lst',
         'referrer',
         'session_id',
         'settings_tracking',
-        'sfnsn', // External share outside Facebook!
+        'sfnsn', // Append when share any permalink in Facebook externally!
         'source',
         'sourceid', // Track and bind browser client name (Google also use this!)
         'upsell_id',
