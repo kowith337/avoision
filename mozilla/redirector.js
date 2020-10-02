@@ -155,6 +155,12 @@ const TRACKERS_BY_ROOT = {
         'r'
     ],
 
+    // GitHub Notif Crap
+    'notification_': [
+        'query',
+        'referrer_id'
+    ],
+
     // Hubspot
     '_hs': [
         'enc',
