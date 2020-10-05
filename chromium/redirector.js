@@ -161,6 +161,11 @@ const TRACKERS_BY_ROOT = {
         'referrer_id'
     ],
 
+    'notifications_': [
+        'query',
+        'referrer_id'
+    ],
+
     // Hubspot
     '_hs': [
         'enc',
