@@ -278,6 +278,7 @@ const TRACKERS_BY_ROOT = {
         // 'appid', // Same as above.
         'aref',
         // 'bacr', // Group feed posts will be stuck in Facebook basic layout and you cannot navigate to older posts.
+        'comment_id', // appear when you click user name in comments to see his/her profile
         'cref',
         'dti',
         'eid',
