@@ -103,6 +103,7 @@ const TRACKERS_BY_ROOT = {
         '_component',
         '_page',
         '_source',
+        '_type',
         'id',
         'src'
     ],
