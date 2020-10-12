@@ -283,6 +283,7 @@ const TRACKERS_BY_ROOT = {
         'cref',
         'dti',
         'eid',
+        'external_ref',
         'extid',
         'fref',
         'impression_id',
