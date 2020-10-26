@@ -17,17 +17,18 @@ const TRACKERS_BY_ROOT = {
 
     // Google's Urchin Tracking Module
     'utm_': [
-        'source',
-        'medium',
-        'term',
         'campaign',
-        'content',
-        'name',
         'cid',
-        'reader',
-        'viz_id',
+        'content',
+        'echo',
+        'medium',
+        'name',
         'pubreferrer',
-        'swu'
+        'reader',
+        'source',
+        'swu',
+        'term',
+        'viz_id'
     ],
 
     // Strip params in AMP pages, not neccessary overall! (AMP itself is still tracking us, so no extra params to be show!!)
@@ -84,7 +85,8 @@ const TRACKERS_BY_ROOT = {
         '_product'
     ],
     'orig_': [
-        'source'
+        'source',
+        'src'
     ],
     'page_': [
         'source'
@@ -103,6 +105,7 @@ const TRACKERS_BY_ROOT = {
         '_component',
         '_page',
         '_source',
+        '_src', // Twitter use this to track certain clicks.
         '_type',
         'id',
         'src'
@@ -216,7 +219,7 @@ const TRACKERS_BY_ROOT = {
         'fbclid',
         // Google Click Identifier
         'gclid',
-        // Instagram Share Identifier (appear when click from shortened links that share outside, e.g. Twitter)
+        // Instagram Share Identifier (appear when click from shortened links that shared outside, e.g. Twitter)
         'igshid',
         // Some other Google Click thing
         'ocid',
@@ -246,7 +249,7 @@ const TRACKERS_BY_ROOT = {
         // YouTube
         'feature', // Short URLs
         'redir_token', // External links redirect token!?
-        // Google FUCKOFF!
+        // Goolag FUCKOFF!
         'aqs',
         'bih', // Display size width, are you kidding me? 
         'biw', // Display size height, alright then, is it really necessary for them to know this?
@@ -254,7 +257,7 @@ const TRACKERS_BY_ROOT = {
         'ei', // Track even timestamp of when you make a search and/or when you navigate to other page, encoded epoch value!
         'esrc',
         'fir',
-        'oq', // typed letters before suggestions pick, it's no longer necessary to binding this!
+        'oq', // Typed keystrokes before suggestions pick, it's no longer necessary to let them know!
         'psig', // Redirect signature (images)
         'rlz', // Chrome installer tracking!
         'sa',
@@ -291,7 +294,7 @@ const TRACKERS_BY_ROOT = {
         'referrer',
         'session_id',
         'settings_tracking',
-        'sfnsn', // Append when share any permalink in Facebook externally!
+        'sfnsn', // Append when shared any permalink in Facebook externally!
         'source',
         'sourceid', // Track and bind browser client name (Google also use this!)
         'upsell_id',
@@ -484,6 +487,17 @@ const ArchiveURLS =  [
     "*://*.yiannopoulos.net/*",
     "*://*.yournewswire.com/*",
     "*://*.zerohedge.com/*"
+/*
+    // Thai sites test section
+    "*://*.khaosod.co.th/*",
+    "*://*.khaosodenglish.com/*",
+    "*://*.matichon.co.th/*",
+    "*://*.thairath.co.th/*",
+    "*://*.thematter.co/*",
+    "*://*.themomentum.co/*",
+    "*://*.thestandard.co/*",
+    "*://*.voicetv.co.th/*"
+*/
 ];
 const archiverDomains = [
     "archive.today",
