@@ -96,6 +96,7 @@ const TRACKERS_BY_ROOT = {
         'ref'
     ],
     'privacy_': [
+        'mutation_token',
         'source'
     ],
     'redirect_': [
@@ -283,6 +284,7 @@ const TRACKERS_BY_ROOT = {
         'aref',
         // 'bacr', // Group feed posts will be stuck in Facebook basic layout and you cannot navigate to older posts.
         'comment_id', // appear when you click user name in comments to see his/her profile
+        'c[0]',
         'cref',
         'dti',
         'eid',
