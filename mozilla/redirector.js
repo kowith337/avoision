@@ -222,12 +222,12 @@ const TRACKERS_BY_ROOT = {
         'gclid',
         // Instagram Share Identifier (appear when click from shortened links that shared outside, e.g. Twitter)
         'igshid',
-        // Some other Google Click thing
-        'ocid',
         // Unknown
         'ncid',
         // Unknown
         'nr_email_referer',
+        // Some other Google Click thing
+        'ocid',
         // Google Play affiliate links
         'pcampaignid',
         // Steam - both store and community
@@ -250,7 +250,7 @@ const TRACKERS_BY_ROOT = {
         // YouTube
         'feature', // Short URLs
         'redir_token', // External links redirect token!?
-        // Goolag FUCKOFF!
+        // GOOLAG FUCKOFF!
         'aqs',
         'bih', // Display size width, are you kidding me? 
         'biw', // Display size height, alright then, is it really necessary for them to know this?
