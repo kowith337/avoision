@@ -222,17 +222,14 @@ const TRACKERS_BY_ROOT = {
         'gclid',
         // Instagram Share Identifier (appear when click from shortened links that shared outside, e.g. Twitter)
         'igshid',
-        // Unknown
-        'ncid',
-        // Unknown
-        'nr_email_referer',
         // Some other Google Click thing
         'ocid',
         // Google Play affiliate links
         'pcampaignid',
         // Steam - both store and community
         'curator_clanid', // Curator referrer
-        'snr',
+        'ser', // tracking param in e-mail
+        'snr', // often appear in various actions
         // Yandex Copycat (fbclid/gclid)
         'yclid',
         // Generic-ish. Facebook, Product Hunt and others
@@ -301,6 +298,8 @@ const TRACKERS_BY_ROOT = {
         'sourceid', // Track and bind browser client name (Google also use this!)
         'upsell_id',
         // Unknown
+        'ncid',
+        'nr_email_referer',
         'sqp',
         // random stuff - appears not to break when cleaned during tests
         'sl',
@@ -489,8 +488,7 @@ const ArchiveURLS =  [
     "*://*.yiannopoulos.net/*",
     "*://*.yournewswire.com/*",
     "*://*.zerohedge.com/*"
-/*
-    // Thai sites test section
+    // Thai sites section
     "*://*.khaosod.co.th/*",
     "*://*.khaosodenglish.com/*",
     "*://*.matichon.co.th/*",
@@ -499,7 +497,6 @@ const ArchiveURLS =  [
     "*://*.themomentum.co/*",
     "*://*.thestandard.co/*",
     "*://*.voicetv.co.th/*"
-*/
 ];
 const archiverDomains = [
     "archive.today",
