@@ -487,7 +487,7 @@ const ArchiveURLS =  [
     "*://*.yahoo.com/news/*",
     "*://*.yiannopoulos.net/*",
     "*://*.yournewswire.com/*",
-    "*://*.zerohedge.com/*"
+    "*://*.zerohedge.com/*",
     // Thai sites section
     "*://*.khaosod.co.th/*",
     "*://*.khaosodenglish.com/*",
