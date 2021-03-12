@@ -515,7 +515,8 @@ function cleaning(details){
     const redditRegex = new RegExp(/(^http(s)?:\/\/(www\.)?reddit\.com)/);
     const oldRedditRegex = new RegExp(/^http(s)?:\/\/(old\.reddit\.com)/);
     const outRedditRegex = new RegExp(/^http(s)?:\/\/(out\.reddit\.com)/);
-
+    const tedditRegex = new RegExp(/^http(s)?:\/\/(teddit\.net)/);
+    
     if (url.match(oldRedditRegex)) if (url.endsWith('/')) {
         //console.debug("oldReddit fired)");
         return
@@ -525,6 +526,12 @@ function cleaning(details){
         //console.debug("outReddit fired");
         //console.debug(`original url: ${url}`);
         url = stripRedditOutLink(url)
+    }
+
+    if (url.match(tedditRegex)) if (url.endsWith('/')) {
+        //console.debug("teddit fired)");
+        //console.debug("rip oldReddit 2021)");
+        return
     }
 
     if (!url.match(oldRedditRegex)) if (url.match(redditRegex)) {
@@ -625,7 +632,8 @@ function pickArchiver(domains) {
 
 function oldReddit(redditUrl) {
     const REDDIT_URL = new RegExp(/(https?:\/\/)(www\.)?(reddit\.com)/);
-    return redditUrl.replace(REDDIT_URL, "$1old.$3");
+    // return redditUrl.replace(REDDIT_URL, "$1old.$3");
+    return redditUrl.replace(REDDIT_URL, "$1teddit.net");
 }
 
 function stripRedditOutLink(redditUrl) {
