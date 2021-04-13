@@ -279,7 +279,7 @@ const TRACKERS_BY_ROOT = {
         // 'app_id', // It's bind everytime you click touch menu, possibly break other sites, even Facebook itself.
         // 'appid', // Same as above.
         'aref',
-        // 'bacr', // Group feed posts will be stuck in Facebook basic layout and you cannot navigate to older posts.
+        'bacr', // Specific user / page / group feed posts will be stuck in Facebook basic layout and you cannot navigate to older posts.
         'comment_id', // appear when you click user name in comments to see his/her profile
         'c[0]',
         'cref',
