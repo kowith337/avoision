@@ -302,6 +302,8 @@ const TRACKERS_BY_ROOT = {
         'nr_email_referer',
         'sqp',
         // random stuff - appears not to break when cleaned during tests
+        'phpsessid', // Common phpBB
+        'sid', //same as above
         'sl',
         'tpl',
         'mp',
